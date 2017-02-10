@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Cartography.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LCHuaProject.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>544212980401A6DA7806F65EAD8C6637</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A636F7215DE73A69563639C9A55FB8C1</key>
+		<key>A67E9EF0C3E2E2E9D9836438B85EEC47</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C9A03C50FED41B3F234F1D300C56E4C8</key>
+		<key>BA213FCDC932AA826CA511A5681F8A5B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

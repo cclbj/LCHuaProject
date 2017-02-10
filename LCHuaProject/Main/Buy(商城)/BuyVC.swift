@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class BuyVC: RootVC {
 
@@ -14,6 +15,7 @@ class BuyVC: RootVC {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    
     }
 
     override func didReceiveMemoryWarning() {
