@@ -74,11 +74,11 @@
 		9B34DBE31E487CC70011BC29 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9B34DBEC1E487CC70011BC29 /* Topic(专题) */,
 				9B34DBE41E487CC70011BC29 /* Buy(商城) */,
 				9B34DBE61E487CC70011BC29 /* Common(基类) */,
 				9B34DBE81E487CC70011BC29 /* Community(社区) */,
 				9B34DBEA1E487CC70011BC29 /* Mine(我的) */,
-				9B34DBEC1E487CC70011BC29 /* Topic(专题) */,
 				9B34DBEE1E487CC70011BC29 /* WallPic(壁纸) */,
 			);
 			path = Main;
