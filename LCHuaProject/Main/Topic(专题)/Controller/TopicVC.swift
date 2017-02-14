@@ -30,6 +30,7 @@ class TopicVC: RootVC,UITableViewDataSource,UITableViewDelegate {
         
         
         // Do any additional setup after loading the view.
+        //创建页面
         self.creatView();
         
         // 网络请求
@@ -42,13 +43,15 @@ class TopicVC: RootVC,UITableViewDataSource,UITableViewDelegate {
         
         
         tableView = UITableView();
-        tableView?.dataSource = self;
-        tableView?.delegate = self;
+        tableView?.separatorStyle = .none;
+        
         
         //注册cell
         tableView?.register(LCTopicIndexCell.classForCoder(), forCellReuseIdentifier: topicCellID);
         tableView?.backgroundColor = UIColor.green;
         tableView?.rowHeight = 160;
+        self.tableView?.dataSource = self;
+        self.tableView?.delegate = self;
         
         self.view.addSubview(tableView!);
         
@@ -62,23 +65,21 @@ class TopicVC: RootVC,UITableViewDataSource,UITableViewDelegate {
     //tableView代理方法
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        if(self.topicRootModel == nil){
+            
+            return 0;
+        }
         
         return (self.topicRootModel?.result.count)!;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCell(withIdentifier: topicCellID);
+        let cell:LCTopicIndexCell = tableView.dequeueReusableCell(withIdentifier: topicCellID) as! LCTopicIndexCell;
         
-        if(cell == nil){
+        cell.topicModel = self.topicRootModel?.result[indexPath.row];
         
-            cell = LCTopicIndexCell.init(style: UITableViewCellStyle.default, reuseIdentifier: topicCellID);
-            
-            
-        }
-        
-        
-        return cell!;
+        return cell;
     }
     
     //网络请求
@@ -100,6 +101,7 @@ class TopicVC: RootVC,UITableViewDataSource,UITableViewDelegate {
                 
                 //将数据模型放入对应的model中
                 self.topicRootModel = TopicIndexModel.init(fromJson: JSON(value));
+                self.tableView?.reloadData();
                 
             }
             
