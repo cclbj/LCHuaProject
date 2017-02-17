@@ -14,8 +14,11 @@ class RootVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //设置通用属性
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

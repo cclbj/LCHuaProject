@@ -1,4 +1,19 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - Alamofire (4.3.0)
   - Cartography (1.0.1)
   - Kingfisher (3.4.0)
@@ -6,6 +21,7 @@ PODS:
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
   - Alamofire (~> 4.3.0)
   - Cartography (~> 1.0.1)
   - Kingfisher (~> 3.4.0)
@@ -13,12 +29,13 @@ DEPENDENCIES:
   - SwiftyJSON (~> 3.1.4)
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   Cartography: c1460e99395b824d9d75360b0382faeb0b33dcd7
   Kingfisher: 5690cfb3d1bddf3a98d679a3a34d0b7294974ed2
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: cec5fb328eb06507de1d20a33092e51b887d069f
+PODFILE CHECKSUM: 3f82cb483be8e855e495cd14348f7f76ca28784e
 
 COCOAPODS: 1.2.0
