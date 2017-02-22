@@ -1,27 +1,45 @@
 //
-//  RootVC.swift
+//  TopicArticleVC.swift
 //  LCHuaProject
 //
-//  Created by lcc on 2017/2/6.
+//  Created by 李臣臣 on 2017/2/22.
 //  Copyright © 2017年 early bird international. All rights reserved.
 //
 
 import UIKit
+import Cartography
 
-class RootVC: UIViewController {
+class TopicArticleVC: RootVC {
+    
+    var autherInfoView:TopicAuterView! = nil;
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.configVC();
+        self.creatView();
     }
     
-    func configVC(){
-        self.view.backgroundColor = UIColor.white;
+    func creatView(){
         
-        self.edgesForExtendedLayout = UIRectEdge.init(rawValue: 0);
-    
+        autherInfoView = TopicAuterView.init();
+//        autherInfoView.backgroundColor = UIColor.red;
+        
+        self.view.addSubview(autherInfoView);
+        
+
+        constrain(autherInfoView!) { (autherInfoView) in
+            
+            autherInfoView.top == (autherInfoView.superview?.top)!;
+            autherInfoView.leading == (autherInfoView.superview?.leading)!;
+            autherInfoView.trailing == (autherInfoView.superview?.trailing)!;
+            
+            autherInfoView.height == 48;
+            
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

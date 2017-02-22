@@ -15,3 +15,26 @@ let CommonURL = "http://app.htxq.net/servlet/";
  currentPageIndex: 0
  **/
 let TopicHomePage = "SysArticleServlet";
+
+
+/**
+ 用户详情
+ http://app.htxq.net/servlet/UserCustomerServlet (get)
+ Parameter:
+ action --> getUserDetail
+ userId --> 专题中的id(可选)
+ **/
+let TopicUserInfo = "UserCustomerServlet";
+
+
+/**
+ 文章详情：
+ http://app.htxq.net/servlet/SysArticleServlet
+ 
+ Parameters:
+ action --> getArticleDetail
+ articleid --> 专题中的id
+ userid --> 用户的ID （可选）
+ 
+ **/
+let TopicArticle = "UserCustomerServlet";

@@ -18,6 +18,10 @@
 		9B34DBF21E487CC70011BC29 /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B34DBE91E487CC70011BC29 /* CommunityVC.swift */; };
 		9B34DBF31E487CC70011BC29 /* MineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B34DBEB1E487CC70011BC29 /* MineVC.swift */; };
 		9B34DBF51E487CC70011BC29 /* PicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B34DBEF1E487CC70011BC29 /* PicVC.swift */; };
+		9B8ACFEF1E5D69A7005309A8 /* TopicAuterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8ACFEE1E5D69A7005309A8 /* TopicAuterView.swift */; };
+		9B8ACFF11E5D69C3005309A8 /* ArticleInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8ACFF01E5D69C3005309A8 /* ArticleInfoView.swift */; };
+		9B8ACFF31E5D8085005309A8 /* TopicArticleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8ACFF21E5D8085005309A8 /* TopicArticleVC.swift */; };
+		9B8ACFF71E5D93D6005309A8 /* DefineFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8ACFF61E5D93D6005309A8 /* DefineFile.swift */; };
 		9BDD11D11E4863F1001FEEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDD11D01E4863F1001FEEAF /* AppDelegate.swift */; };
 		9BDD11D31E4863F1001FEEAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDD11D21E4863F1001FEEAF /* ViewController.swift */; };
 		9BDD11D61E4863F1001FEEAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BDD11D41E4863F1001FEEAF /* Main.storyboard */; };
@@ -41,6 +45,10 @@
 		9B34DBE91E487CC70011BC29 /* CommunityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
 		9B34DBEB1E487CC70011BC29 /* MineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineVC.swift; sourceTree = "<group>"; };
 		9B34DBEF1E487CC70011BC29 /* PicVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicVC.swift; sourceTree = "<group>"; };
+		9B8ACFEE1E5D69A7005309A8 /* TopicAuterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicAuterView.swift; sourceTree = "<group>"; };
+		9B8ACFF01E5D69C3005309A8 /* ArticleInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleInfoView.swift; sourceTree = "<group>"; };
+		9B8ACFF21E5D8085005309A8 /* TopicArticleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicArticleVC.swift; sourceTree = "<group>"; };
+		9B8ACFF61E5D93D6005309A8 /* DefineFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefineFile.swift; sourceTree = "<group>"; };
 		9BDD11CD1E4863F1001FEEAF /* LCHuaProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCHuaProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BDD11D01E4863F1001FEEAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BDD11D21E4863F1001FEEAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				9B1159781E51AC6C00D9C745 /* TopicVC.swift */,
+				9B8ACFF21E5D8085005309A8 /* TopicArticleVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -106,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				9B11597B1E51AC6C00D9C745 /* LCTopicIndexCell.swift */,
+				9B8ACFEE1E5D69A7005309A8 /* TopicAuterView.swift */,
+				9B8ACFF01E5D69C3005309A8 /* ArticleInfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				9BF6AFDA1E4DA8E900A6ED96 /* URLRequest.swift */,
+				9B8ACFF61E5D93D6005309A8 /* DefineFile.swift */,
 			);
 			path = "Resource(资源文件)";
 			sourceTree = "<group>";
@@ -360,11 +372,15 @@
 				9BDD11D31E4863F1001FEEAF /* ViewController.swift in Sources */,
 				9B34DBF31E487CC70011BC29 /* MineVC.swift in Sources */,
 				9B1159841E51AEA700D9C745 /* Result.swift in Sources */,
+				9B8ACFF11E5D69C3005309A8 /* ArticleInfoView.swift in Sources */,
 				9B34DBF11E487CC70011BC29 /* RootVC.swift in Sources */,
 				9B11597D1E51AC6C00D9C745 /* LCTopicIndexCell.swift in Sources */,
 				9B1159821E51AEA700D9C745 /* Author.swift in Sources */,
+				9B8ACFF31E5D8085005309A8 /* TopicArticleVC.swift in Sources */,
+				9B8ACFF71E5D93D6005309A8 /* DefineFile.swift in Sources */,
 				9BDD11D11E4863F1001FEEAF /* AppDelegate.swift in Sources */,
 				9B11597C1E51AC6C00D9C745 /* TopicVC.swift in Sources */,
+				9B8ACFEF1E5D69A7005309A8 /* TopicAuterView.swift in Sources */,
 				9B1159851E51AEA700D9C745 /* TopicIndexModel.swift in Sources */,
 				9B1159831E51AEA700D9C745 /* Category.swift in Sources */,
 				9BF6AFDB1E4DA8E900A6ED96 /* URLRequest.swift in Sources */,

@@ -1,18 +1,21 @@
 PODS:
   - Alamofire (4.3.0)
   - Cartography (1.0.1)
+  - Kingfisher (3.3.4)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.3.0)
   - Cartography (~> 1.0.1)
+  - Kingfisher (~> 3.3.4)
   - SwiftyJSON (~> 3.1.4)
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   Cartography: c1460e99395b824d9d75360b0382faeb0b33dcd7
+  Kingfisher: 35f289f015d26e81ea6c85048718c6205f3933c6
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: b6078918578f61684bc796c057757ad381e2f6d7
+PODFILE CHECKSUM: 96b64d777560cfc5d5b1ab95e4bd4ee1f65cab50
 
 COCOAPODS: 1.2.0

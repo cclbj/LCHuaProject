@@ -8,6 +8,7 @@
 
 import UIKit
 import Cartography
+import Kingfisher
 
 class LCTopicIndexCell: UITableViewCell {
     
@@ -18,18 +19,14 @@ class LCTopicIndexCell: UITableViewCell {
     //数据传递
 public var topicModel:Result!{
     
-        set{
-        
-            topicModel = newValue;
-            self.showData();
-            
-        }
-        
-        get{
-        
-            return topicModel;
-        }
-        
+    
+    didSet{
+    
+        self.showData();
+    }
+    
+    
+    
     }
     
     
@@ -60,7 +57,10 @@ public var topicModel:Result!{
         tagLabel = UILabel();
         
         titleLabel.font = UIFont.systemFont(ofSize: 14);
+        titleLabel.textColor = UIColor.white;
+        
         tagLabel.font = UIFont.systemFont(ofSize: 12);
+        tagLabel.textColor = UIColor.white;
         
         
         self.addSubview(bgImg);
@@ -94,6 +94,8 @@ public var topicModel:Result!{
     func showData(){
         self.titleLabel.text = topicModel.title;
         self.tagLabel.text = "#\(topicModel.category.name)#";
+        
+        self.bgImg.kf.setImage(with: URL.init(string: topicModel.smallIcon));
     }
     
     

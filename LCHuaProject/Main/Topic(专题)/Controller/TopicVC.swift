@@ -59,28 +59,38 @@ class TopicVC: RootVC,UITableViewDataSource,UITableViewDelegate {
         
     }
     
+    //MARK:tableView代理方法
     //tableView代理方法
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        if (self.topicRootModel != nil){
         
-        return (self.topicRootModel?.result.count)!;
+            return (self.topicRootModel?.result.count)!;
+        }else{
+        
+            return 0;
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCell(withIdentifier: topicCellID);
-        
-        if(cell == nil){
-        
-            cell = LCTopicIndexCell.init(style: UITableViewCellStyle.default, reuseIdentifier: topicCellID);
-            
-            
-        }
+        let cell:LCTopicIndexCell = tableView.dequeueReusableCell(withIdentifier: topicCellID) as! LCTopicIndexCell;
         
         
-        return cell!;
+        cell.topicModel = self.topicRootModel?.result[indexPath.row];
+        
+        
+        return cell;
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let topicArticleVc:TopicArticleVC = TopicArticleVC();
+        
+        self.navigationController?.pushViewController(topicArticleVc, animated: true);
+        
+    }
+    
+    //MARK:网络相关
     //网络请求
     func netRequest() {
         
@@ -100,6 +110,8 @@ class TopicVC: RootVC,UITableViewDataSource,UITableViewDelegate {
                 
                 //将数据模型放入对应的model中
                 self.topicRootModel = TopicIndexModel.init(fromJson: JSON(value));
+                
+                self.tableView?.reloadData();
                 
             }
             
