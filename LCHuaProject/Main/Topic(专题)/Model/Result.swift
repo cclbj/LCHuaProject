@@ -12,7 +12,7 @@ import SwiftyJSON
 class Result : NSObject, NSCoding{
 
 	var appoint : Int!
-	var author : Author!
+	var author : AutherModel!
 	var category : Category!
 	var check : Bool!
 	var content : String!
@@ -65,7 +65,7 @@ class Result : NSObject, NSCoding{
 		appoint = json["appoint"].intValue
 		let authorJson = json["author"]
 		if !authorJson.isEmpty{
-			author = Author(fromJson: authorJson)
+			author = AutherModel(fromJson: authorJson)
 		}
 		let categoryJson = json["category"]
 		if !categoryJson.isEmpty{
@@ -258,7 +258,7 @@ class Result : NSObject, NSCoding{
     @objc required init(coder aDecoder: NSCoder)
 	{
          appoint = aDecoder.decodeObject(forKey: "appoint") as? Int
-         author = aDecoder.decodeObject(forKey: "author") as? Author
+         author = aDecoder.decodeObject(forKey: "author") as? AutherModel
          category = aDecoder.decodeObject(forKey: "category") as? Category
          check = aDecoder.decodeObject(forKey: "check") as? Bool
          content = aDecoder.decodeObject(forKey: "content") as? String

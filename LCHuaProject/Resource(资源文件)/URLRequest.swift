@@ -30,7 +30,7 @@ let TopicHomePage = "SysArticleServlet";
  
  **/
 
-let UserDetail = "getUserDetail";
+let UserDetail = "UserCustomerServlet";
 
 
 /**
@@ -45,7 +45,7 @@ let UserDetail = "getUserDetail";
  
  **/
 
-let ArticleDetail = "getArticleDetail";
+let ArticleDetail = "SysArticleServlet";
 
 
 

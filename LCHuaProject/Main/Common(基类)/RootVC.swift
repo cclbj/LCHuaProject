@@ -16,7 +16,13 @@ class RootVC: UIViewController {
         // Do any additional setup after loading the view.
         
         //设置通用属性
+        self.configOption();
         
+    }
+    
+    func configOption(){
+        self.edgesForExtendedLayout = .init(rawValue: 0);
+        self.view.backgroundColor = UIColor.white;
     }
     
     override func didReceiveMemoryWarning() {

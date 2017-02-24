@@ -140,6 +140,15 @@ class TopicVC: RootVC,UITableViewDataSource,UITableViewDelegate {
         return cell;
     }
     
+    //点击事件
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let articleDetaiVC = ArticleDetailVC();
+        articleDetaiVC.hidesBottomBarWhenPushed = true;
+        articleDetaiVC.listModel = self.topicRootModel?.result[indexPath.row];
+        self.navigationController?.pushViewController(articleDetaiVC, animated: true);
+    }
+    
     //MARK:网络请求
     func netRequest() {
         

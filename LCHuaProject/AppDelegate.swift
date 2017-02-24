@@ -19,8 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         let homeTabBarController = HomeTabBarController();
-        self.window?.backgroundColor = UIColor.white;
-        self.window?.rootViewController = homeTabBarController;
+        
+        window = UIWindow.init();
+        window?.makeKeyAndVisible();
+        window?.backgroundColor = UIColor.white;
+        window?.rootViewController = homeTabBarController;
         
         
         return true
